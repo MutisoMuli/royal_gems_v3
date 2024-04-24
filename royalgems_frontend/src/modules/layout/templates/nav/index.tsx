@@ -19,13 +19,7 @@ export default async function Nav() {
           </div>
 
           <div className="flex items-center h-full">
-            <LocalizedClientLink
-              href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-              data-testid="nav-store-link"
-            >
-              Medusa Store
-            </LocalizedClientLink>
+            <img height="100px" width="50px" src="https://res.cloudinary.com/dhbztjzkr/image/upload/v1713868567/royalgems_logo_y79jfb.jpg" />
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
