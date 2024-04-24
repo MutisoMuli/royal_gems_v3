@@ -16,7 +16,7 @@ const Hero = () => {
           </Heading>
           <Heading
             level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal mb-12" style={{ color: "gold", fontWeight: "bold", textShadow: "0 0 10px black", fontSize: "2rem"}}
+            className="text-3xl leading-10 text-ui-fg-subtle font-normal mb-12" style={{ color: "black", fontWeight: "bold", textShadow: "0 0 10px black", fontSize: "2rem"}}
           >
             Since 2021
           </Heading>

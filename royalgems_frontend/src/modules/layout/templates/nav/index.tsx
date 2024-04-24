@@ -17,11 +17,7 @@ export default async function Nav() {
               <SideMenu regions={regions} />
             </div>
           </div>
-
-          <div className="flex items-center h-full">
-            <img height="100px" width="50px" src="https://res.cloudinary.com/dhbztjzkr/image/upload/v1713868567/royalgems_logo_y79jfb.jpg" />
-          </div>
-
+      
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
@@ -49,7 +45,7 @@ export default async function Nav() {
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
-                  Cart (0)
+                  <span style={{ fontWeight: "bold", color: "gold" }}>Cart (0)</span>
                 </LocalizedClientLink>
               }
             >
