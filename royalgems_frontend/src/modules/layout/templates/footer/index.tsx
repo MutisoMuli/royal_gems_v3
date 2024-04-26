@@ -10,16 +10,20 @@ export default async function Footer() {
   const { product_categories } = await getCategoriesList(0, 6)
 
   return (
-    <footer className="border-t border-ui-border-base w-full">
+    <footer className="border-t border-ui-border-base w-full" style={{backgroundImage: 'url("https://res.cloudinary.com/dhbztjzkr/image/upload/v1714088895/royalgems_footer_v6cqvi.jpg")', backgroundSize: "100% auto", backgroundRepeat: "no-repeat", backgroundPosition: "center bottom" }}>
       <div className="content-container flex flex-col w-full">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
           <div>
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase" style={{ color: "#b5b8e1" }}
             >
               Royal Gems
             </LocalizedClientLink>
+            <p style={{ color: "#e9dad5" }}>Dealers in Gold Plated | Sterling 925 Silver Jewelry</p>
+            <p style={{ color: "#e9dad5" }}>Located at Kimathi House | Lower Ground</p>
+            <p style={{ color: "#e9dad5" }}>Call 0113638444</p>
+            <p style={{ color: "#e9dad5" }}>Open Monday to Saturday | from 0930 to 1900Hrs</p>
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {product_categories && product_categories?.length > 0 && (
@@ -124,16 +128,6 @@ export default async function Footer() {
                     className="hover:text-ui-fg-base"
                   >
                     Facebook
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Source code
                   </a>
                 </li>
               </ul>

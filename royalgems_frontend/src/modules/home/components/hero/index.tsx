@@ -16,18 +16,9 @@ const Hero = () => {
           </Heading>
           <Heading
             level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal mb-12" style={{ color: "black", fontWeight: "bold", textShadow: "0 0 10px black", fontSize: "2rem"}}
+            className="text-3xl leading-10 text-ui-fg-subtle font-normal mb-12" style={{ color: "gold", fontWeight: "bold", textShadow: "0 0 10px black", fontSize: "2rem"}}
           >
             Since 2021
-          </Heading>
-          <Heading
-          level="h3"
-          className="text-3xl leading-10 text-ui-fg-subtle font-normal" style={{ color: "gold", fontWeight: "bold", textShadow: "0 0 10px black"}}
-          >
-            Gold Plated | Sterling 925 Silver Jewelry <br />
-            <span>📌 Kimathi House | Lower Ground</span> <br />
-            <span>📞 0113638444</span> <br />
-            <span>⏰ Open MON-SAT | 0930-1900Hrs</span>
           </Heading>
         </span>
       </div>
