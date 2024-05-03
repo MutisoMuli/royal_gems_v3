@@ -28,7 +28,11 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
             <>
               <div className="relative flex h-full">
                 <Popover.Button data-testid="nav-menu-button" className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base" style={{ color: "black", fontSize: "1.2rem" }}>
-                  Menu
+                <img
+                  src="https://res.cloudinary.com/dhbztjzkr/image/upload/v1713957203/royalgems_logo-removebg_rpnnvv.png"
+                  alt="Menu Icon"
+                  className="h-32"
+                />
                 </Popover.Button>
               </div>
 
