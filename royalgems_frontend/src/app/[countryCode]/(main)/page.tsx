@@ -8,9 +8,9 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "Royal Gems Accessories",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "This is the frontend templte for Royal Gems Accesories",
 }
 
 const getCollectionsWithProducts = cache(
@@ -69,7 +69,7 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <div className="py-12">
+      <div className="py-12 bg-black text-yellow-400">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>

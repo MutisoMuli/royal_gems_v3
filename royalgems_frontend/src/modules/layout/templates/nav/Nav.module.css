@@ -18,3 +18,32 @@
   .text-gold {
     color: gold;
   }
+
+  .gold-icon {
+    color: gold;
+  }
+
+  .search-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 2px solid gold;
+    border-radius: 4px;
+    padding: 6px;
+  }
+  
+  .search-container input {
+    flex: 1;
+    padding: 6px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-container button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

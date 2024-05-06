@@ -8,6 +8,9 @@ import { Fragment } from "react"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CountrySelect from "../country-select"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import styles from './Nav.module.css';
 
 const SideMenuItems = {
   Home: "/",
@@ -27,12 +30,12 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
           {({ open, close }) => (
             <>
               <div className="relative flex h-full">
-                <Popover.Button data-testid="nav-menu-button" className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base" style={{ color: "black", fontSize: "1.2rem" }}>
-                <img
-                  src="https://res.cloudinary.com/dhbztjzkr/image/upload/v1713957203/royalgems_logo-removebg_rpnnvv.png"
-                  alt="Menu Icon"
-                  className="h-32"
-                />
+                <Popover.Button
+                  data-testid="nav-menu-button"
+                  className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
+                  style={{ fontSize: "1.2rem" }}
+                >
+                  <FontAwesomeIcon icon={faBars} className="h-6 w-6" style={{ color: 'gold' }} />
                 </Popover.Button>
               </div>
 

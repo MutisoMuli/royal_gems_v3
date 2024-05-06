@@ -5,12 +5,17 @@ import NextJs from "../../../common/icons/nextjs"
 
 const MedusaCTA = () => {
   return (
-    <Text className="flex gap-x-2 txt-compact-small-plus items-center">
-  <a href="https://github.com/MutisoMuli" target="_blank" rel="noreferrer">
-    <NextJs fill="#9ca3af" />
-  </a>
-</Text>
-
+    <Text className="flex gap-x-2 txt-compact-small-plus items-center text-yellow-400">
+      <span>Developed by</span>
+      <a
+        href="https://twitter.com/MutisoMuli_PE"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        Mutiso Muli
+      </a>
+    </Text>
   )
 }
 
