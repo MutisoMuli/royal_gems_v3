@@ -30,7 +30,7 @@ const AccountNav = ({
         {route !== `/${countryCode}/account` ? (
           <LocalizedClientLink
             href="/account"
-            className="flex items-center gap-x-2 text-small-regular py-2"
+            className="flex items-center gap-x-2 text-small-regular py-2 text-yellow-400"
             data-testid="account-main-link"
           >
             <>
@@ -40,10 +40,10 @@ const AccountNav = ({
           </LocalizedClientLink>
         ) : (
           <>
-            <div className="text-xl-semi mb-4 px-8">
+            <div className="text-xl-semi mb-4 px-8 text-yellow-400">
               Hello {customer?.first_name}
             </div>
-            <div className="text-base-regular">
+            <div className="text-base-regular text-yellow-400">
               <ul>
                 <li>
                   <LocalizedClientLink
@@ -110,10 +110,10 @@ const AccountNav = ({
       <div className="hidden small:block" data-testid="account-nav">
         <div>
           <div className="pb-4">
-            <h3 className="text-base-semi">Account</h3>
+            <h3 className="text-base-semi text-yellow-400">Account</h3>
           </div>
-          <div className="text-base-regular">
-            <ul className="flex mb-0 justify-start items-start flex-col gap-y-4">
+          <div className="text-base-regular text-yellow-400">
+            <ul className="flex mb-0 justify-start items-start flex-col gap-y-4 text-yellow-400">
               <li>
                 <AccountNavLink
                   href="/account"
@@ -150,7 +150,7 @@ const AccountNav = ({
                   Orders
                 </AccountNavLink>
               </li>
-              <li className="text-grey-700">
+              <li className="text-grey-700  text-yellow-400">
                 <button
                   type="button"
                   onClick={handleLogout}
@@ -181,7 +181,7 @@ const AccountNavLink = ({ href, route, children, 'data-testid': dataTestId }: Ac
   return (
     <LocalizedClientLink
       href={href}
-      className={clx("text-ui-fg-subtle hover:text-ui-fg-base", {
+      className={clx("text-ui-fg-subtle hover:text-ui-fg-base text-yellow-400", {
         "text-ui-fg-base font-semibold": active,
       })}
       data-testid={dataTestId}

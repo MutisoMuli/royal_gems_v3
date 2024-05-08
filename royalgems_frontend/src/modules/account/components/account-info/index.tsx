@@ -45,7 +45,7 @@ const AccountInfo = ({
     <div className="text-small-regular" data-testid={dataTestid}>
       <div className="flex items-end justify-between">
         <div className="flex flex-col">
-          <span className="uppercase text-ui-fg-base">{label}</span>
+          <span className="uppercase text-ui-fg-base text-yellow-400">{label}</span>
           <div className="flex items-center flex-1 basis-0 justify-end gap-x-4">
             {typeof currentInfo === "string" ? (
               <span className="font-semibold" data-testid="current-info">{currentInfo}</span>
@@ -57,7 +57,7 @@ const AccountInfo = ({
         <div>
           <Button
             variant="secondary"
-            className="w-[100px] min-h-[25px] py-1"
+            className="w-[100px] min-h-[25px] py-1 text-yellow-400"
             onClick={handleToggle}
             type={state ? "reset" : "button"}
             data-testid="edit-button"

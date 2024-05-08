@@ -10,7 +10,7 @@ export default async function Footer() {
   const { product_categories } = await getCategoriesList(0, 6)
 
   return (
-    <footer className="relative h-0 bg-black border-t border-ui-border-base w-full">
+    <footer className="relative h-0 border-t border-ui-border-base w-full" style={{ backgroundImage: 'url(https://res.cloudinary.com/dhbztjzkr/image/upload/v1715130564/Screenshot_2024-05-08_040833_kftelh.png)', backgroundSize: 'cover' }}>
       <div className="relative h-0 bg-black content-container flex flex-col w-full">
         <div className="relative h-0  flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
           <div>

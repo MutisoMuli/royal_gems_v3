@@ -74,15 +74,15 @@ const EditAddress: React.FC<EditAddressProps> = ({
         data-testid="address-container"
       >
         <div className="flex flex-col">
-          <Heading className="text-left text-base-semi" data-testid="address-name">
+          <Heading className="text-left text-base-semi text-yellow-400" data-testid="address-name">
             {address.first_name} {address.last_name}
           </Heading>
           {address.company && (
-            <Text className="txt-compact-small text-ui-fg-base" data-testid="address-company">
+            <Text className="txt-compact-small text-ui-fg-base text-yellow-400" data-testid="address-company">
               {address.company}
             </Text>
           )}
-          <Text className="flex flex-col text-left text-base-regular mt-2">
+          <Text className="flex flex-col text-left text-base-regular mt-2 text-yellow-400">
             <span data-testid="address-address">
               {address.address_1}
               {address.address_2 && <span>, {address.address_2}</span>}
@@ -98,7 +98,7 @@ const EditAddress: React.FC<EditAddressProps> = ({
         </div>
         <div className="flex items-center gap-x-4">
           <button
-            className="text-small-regular text-ui-fg-base flex items-center gap-x-2"
+            className="text-small-regular text-ui-fg-base flex items-center gap-x-2 text-yellow-400"
             onClick={open}
             data-testid="address-edit-button"
           >
@@ -106,7 +106,7 @@ const EditAddress: React.FC<EditAddressProps> = ({
             Edit
           </button>
           <button
-            className="text-small-regular text-ui-fg-base flex items-center gap-x-2"
+            className="text-small-regular text-ui-fg-base flex items-center gap-x-2 text-yellow-400"
             onClick={removeAddress}
             data-testid="address-delete-button"
           >
@@ -122,7 +122,7 @@ const EditAddress: React.FC<EditAddressProps> = ({
         </Modal.Title>
         <form action={formAction}>
           <Modal.Body>
-            <div className="grid grid-cols-1 gap-y-2">
+            <div className="grid grid-cols-1 gap-y-2 text-yellow-400">
               <div className="grid grid-cols-2 gap-x-2">
                 <Input
                   label="First name"
@@ -163,7 +163,7 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.address_2 || undefined}
                 data-testid="address-2-input"
               />
-              <div className="grid grid-cols-[144px_1fr] gap-x-2">
+              <div className="grid grid-cols-[144px_1fr] gap-x-2 text-yellow-400">
                 <Input
                   label="Postal code"
                   name="postal_code"
@@ -205,13 +205,13 @@ const EditAddress: React.FC<EditAddressProps> = ({
               />
             </div>
             {formState.error && (
-              <div className="text-rose-500 text-small-regular py-2">
+              <div className="text-rose-500 text-small-regular py-2 text-yellow-400">
                 {formState.error}
               </div>
             )}
           </Modal.Body>
           <Modal.Footer>
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3 mt-6 text-yellow-400">
               <Button
                 type="reset"
                 variant="secondary"

@@ -47,18 +47,18 @@ const AddAddress = ({ region }: { region: Region }) => {
         onClick={open}
         data-testid="add-address-button"
       >
-        <span className="text-base-semi">New address</span>
+        <span className="text-base-semi text-yellow-400">New address</span>
         <Plus />
       </button>
 
       <Modal isOpen={state} close={close} data-testid="add-address-modal">
         <Modal.Title>
-          <Heading className="mb-2">Add address</Heading>
+          <Heading className="mb-2 text-yellow-400">Add address</Heading>
         </Modal.Title>
         <form action={formAction}>
           <Modal.Body>
-            <div className="flex flex-col gap-y-2">
-              <div className="grid grid-cols-2 gap-x-2">
+            <div className="flex flex-col gap-y-2 text-yellow-400">
+              <div className="grid grid-cols-2 gap-x-2 text-yellow-400">
                 <Input
                   label="First name"
                   name="first_name"
@@ -93,7 +93,7 @@ const AddAddress = ({ region }: { region: Region }) => {
                 autoComplete="address-line2"
                 data-testid="address-2-input"
               />
-              <div className="grid grid-cols-[144px_1fr] gap-x-2">
+              <div className="grid grid-cols-[144px_1fr] gap-x-2 text-yellow-400">
                 <Input
                   label="Postal code"
                   name="postal_code"
@@ -125,13 +125,13 @@ const AddAddress = ({ region }: { region: Region }) => {
               <Input label="Phone" name="phone" autoComplete="phone" data-testid="phone-input" />
             </div>
             {formState.error && (
-              <div className="text-rose-500 text-small-regular py-2" data-testid="address-error">
+              <div className="text-rose-500 text-small-regular py-2 text-yellow-400" data-testid="address-error">
                 {formState.error}
               </div>
             )}
           </Modal.Body>
           <Modal.Footer>
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3 mt-6 text-yellow-400">
               <Button
                 type="reset"
                 variant="secondary"

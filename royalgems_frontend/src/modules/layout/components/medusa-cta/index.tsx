@@ -5,7 +5,7 @@ import NextJs from "../../../common/icons/nextjs"
 
 const MedusaCTA = () => {
   return (
-    <Text className="flex gap-x-2 txt-compact-small-plus items-center text-yellow-400">
+    <Text className="flex gap-x-2 txt-compact-small-plus items-center" style={{ color: '#3b82f6' }}>>
       <span>Developed by</span>
       <a
         href="https://twitter.com/MutisoMuli_PE"

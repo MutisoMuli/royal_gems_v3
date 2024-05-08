@@ -48,7 +48,7 @@ export default async function Nav() {
             <div className="small:flex items-center gap-x-6 h-full">
               
               <LocalizedClientLink className="hover:text-ui-fg-base font-bold text-gold" href="/account" data-testid="nav-account-link">
-                <button style={{ backgroundColor: 'gold', color: 'black', fontWeight: 'bold', padding: '0.5rem 1rem', borderRadius: '0.25rem' }}>
+                <button style={{ backgroundColor: 'gold', color: 'black', fontWeight: 'bold', padding: '0.5rem 2rem', borderRadius: '0.50rem', fontSize: '1.0rem' }}>
                   Log in
                 </button>
               </LocalizedClientLink>
