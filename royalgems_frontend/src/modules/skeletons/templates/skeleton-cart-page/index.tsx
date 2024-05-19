@@ -51,7 +51,7 @@ const SkeletonCartPage = () => {
                 </Table.Body>
               </Table>
             </div>
-          </div>
+          </div>about:blank#blocked
           <div className="flex flex-col gap-y-8">
             <SkeletonOrderSummary />
             <SkeletonCodeForm />
